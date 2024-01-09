@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroSoft Support</title>
+    <link rel="stylesheet" href="./malicious.css">
+</head>
+<body>
+    <audio src="./sound/myAudio.mp3" id="myAudio" loop></audio>
+    <div class="top-header">
+        <div class="top-header-box">
+            <p>Do not restart or use your computer</p>
+            <p>Your computer is disabled. Please call us.</p>
+            <p>Access is the block security reason for this computer.</p>
+            <p>Please contact us immediately. A technician will help you solve the problem.</p>
+        </div>
+    </div>
+    <div class="third-popup popup" id="thirdPopup">
+     <div class="first-row">
+         <div class="first-row-left">
+             <img src="./images/microsoft logo.png" alt="">
+             <h4>Microsoft Defender - Security Warning</h4>
+         </div>
+         <div class="first-row-right">
+             <input type="text" class="input-field" placeholder="Activate The Liscence">
+             <img src="./images/close.png" alt="">
+         </div>
+     </div>
+     <div class="second-row">
+         <div class="sub-popup">
+             <div class="first-row">
+                 <div class="first-row-left">
+                     <a href="#">Anaysis</a>
+                     <a href="#">Terms</a>
+                     <a href="#">Services</a>
+                 </div>
+             </div>
+             <div class="second-row">
+                 <div>
+                     <h5>Threat Detected : Pornographics Spyware</h5>
+                 </div>
+                 <div class="row">
+                     <img src="./images/black-defender.png" alt="">
+                 </div>
+                 <div>
+                     <h4>Windows was blocked due to questionable activity.</h4>
+                     <h5>Contact Technical Supoort</h5>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="third-row">
+         <div class="third-row-left">
+             <img src="./images/target.png" alt="">
+         </div>
+         <div class="third-row-right">
+             <h4>Windows Upgrade To Premium</h4>
+         </div>
+     </div>
+    </div>
+    <div class="second-popup popup" id="secondPopup" style="background-color: rgb(230, 8, 8);">
+         <div class="common-column-flex">
+            <h3>Windows Defender - Security Warning</h3>
+            <p>DATA ALERT :- Hackers have stolen your personal data including your personal photographs , media and other details. To resolve this issue you have to contact technical support </p>
+             <p>Your computer has alerted us that it has been infected with a Tojan spyware. </p>
+             <p>Call Microsoft support immediately to report this threat, prevent identity theft and unlock access to this device.</p>
+             <p>A Trojan virus, often referred to simply as a Trojan, is a type of malicious software (malware) that disguises itself as legitimate software to trick users into installing it on their computer or mobile device. Named after the ancient Greek story of the wooden horse used to infiltrate Troy, Trojan viruses deceive users by appearing harmless or even beneficial</p>
+             <p>Trojans can be distributed through various means, including email attachments, malicious websites, or software downloads. It's crucial for users to practice safe computing habits, such as avoiding downloading software from untrusted sources, keeping their operating system and security software up to date, and being cautious when opening email attachments or clicking on links from unknown or suspicious sources. Security software, such as antivirus programs, can also help detect and remove Trojan infections.</p>
+             <p>Your personal inforamtion stolen by hackers can be used for some illegal activites so please be aware to contact support team without any further delay</p>
+             <p>Call Microsoft support immediately to report this threat, prevent identity theft and unlock access to this device..</p>
+            <p>Call MicroSoft Support <b style="font-family: 'Noto Sans', sans-serif; font-size: 1.1rem;">+1 (233) 833 422 969 (Security Helpline)</b></p>
+         </div>
+         <div class="third-row">
+             <!-- <div class="third-row-left"></div> -->
+             <div class="third-row-right">
+                 <button class="btn-a outline" onclick="considerSecondPopup()">Continue</button>
+                 <button class="btn-a filled"  onclick="considerSecondPopup()">Back</button>
+             </div>
+         </div>
+    </div>
+   <div class="first-popup popup" id="firstPopup">
+        <div class="first-row">
+            <div class="first-row-left">
+                <img src="./images/black-defender.png" alt="">
+                <h4>Windows Defender Security Center</h4>
+            </div>
+            <div class="first-row-right">
+                <img src="./images/close.png" onclick="considerFirstPopup()" alt="">
+            </div>
+        </div>
+        <div class="second-row">
+            <div>
+                <h5 style="color: rgb(230, 8, 8);font-family: 'Noto Sans', sans-serif; font-size: 1.1rem;">Do Not Touch Anything</h5>
+                <h5 style="color: rgb(230, 8, 8);font-family: 'Noto Sans', sans-serif; font-size: 1.1rem;">Threat Detected : Trojan Spyware</h5>
+            </div>
+            <div class="row">
+                <img src="./images/fbi.png" alt="">
+                <img style="width: 40px;" src="./images/black-defender.png" alt="">
+                <img src="./images/user.png" alt="">
+            </div>
+            <div>
+                <h5 style="font-size: 0.8rem; color: black;">Access to this PC has been blocked for security reasons.</h5>
+                <h5>Contact Windows Support : +1 (233) 833 422 969</h5>
+            </div>
+        </div>
+        <div class="third-row">
+            <div class="third-row-left">
+                <img src="./images/red-defender.png" alt="">
+            </div>
+            <div class="third-row-right">
+                <button class="btn-a outline" onclick="considerFirstPopup()">Deny</button>
+                <button class="btn-a filled" style="background-color: red;" onclick="considerFirstPopup()">Allow</button>
+            </div>
+        </div>
+   </div>
+
+   <div class="fullscreen" id="fullscreen">
+       <div class="fullscreen-popup">
+            <div class="row">
+                <img src="./images/red-defender.png" alt="">
+            </div>
+            <h4>This is for website safety . Are You above 18 ?</h4>
+            <div class="third-row">
+                <button class="btn-a filled" onclick="goFullScreen()">Yes</button>
+                <button class="btn-a outline" onclick="goFullScreen()">No</button>
+            </div>
+       </div>
+   </div>
+   
+
+
+
+
+    <script src="./malicious.js"></script>
+</body>
+</html>

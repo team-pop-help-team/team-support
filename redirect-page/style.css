@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --blue:rgb(0, 208, 255);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn-a{
+    padding: 0.6rem 1rem;
+    background-color: white;
+    border-radius: 6px;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+/* NAVBAR */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--blue);
+}
+
+
+/* LANDING SECTION */
+.landing-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    gap: 3rem;
+}
+.landing-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+.landing-section-left .btn-a{
+    background-color: var(--blue);
+    width: 150px;
+    color: white;
+}
+.landing-section-right img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* FOOD SECTION */
+.food-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+.food-section-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.food-section-top img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.food-section-bottom{
+    text-align: center;
+}
+.food-section-bottom p{
+    max-width: 800px;
+}
+
+/* YOGA SECTION */
+.yoga-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 2rem
+}
+.yoga-section-left img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.yoga-section-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+/* BLOG SECTION */
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+}
+.blog-card{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 1rem;
+}
+.blog-card:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+.blog-section .blog-card img{
+    min-width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.blog-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.blog-detail p{
+    width: 80%;
+}
+
+#footer{
+    background-color: var(--blue);
+    text-align: center;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.white-screen{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+}
